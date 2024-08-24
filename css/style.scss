@@ -1,0 +1,714 @@
+$background: #2b2b2b;
+$background---secondary: #3b3b3b;
+$caption--label-text: #858584;
+$text: #fff;
+$call-to-action: #a259ff;
+$blue-accent: #377df7;
+$red-accent: #ff7262;
+$header-height: 100px;
+
+$font-family: "Space Mono", sans-serif;
+$second-family: "Work Sans", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $text;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: $background---secondary;
+}
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+header, main, footer {
+  max-width: 1280px;
+  margin: auto;
+  background: $background;
+}
+
+main {
+  .user-link {
+    display: flex;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    > img {
+      margin-right: 12px;
+    }
+
+    .nickname {
+      margin-top: 2px;
+    }
+  }
+}
+
+.user-avatar {
+  height: 24px;
+  width: 24px;
+}
+
+.see-more-btn {
+  border: 2px solid $call-to-action;
+  border-radius: 20px;
+  padding: 19px 50px;
+  display: inline-flex;
+  max-height: 60px;
+  align-self: end;
+
+  img {
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+  }
+
+  span {
+    margin-top: 3px;
+  }
+}
+
+header {
+
+  .container {
+    position: fixed;
+    max-width: 1280px;
+    padding: 0 50px;
+    display: flex;
+    font-family: $second-family, serif;
+    font-weight: 600;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    background: $background;
+    z-index: 100000;
+
+    .logo {
+      margin-top: 8px;
+    }
+
+    .nav-and-sign-in {
+      display: inline-flex;
+      align-items: center;
+
+      .navigation {
+        margin-top: 39px;
+
+        ul {
+          display: flex;
+          gap: 30px;
+          margin-bottom: 39px;
+        }
+      }
+
+      .see-more-btn {
+        align-self: center;
+        align-items: center;
+        margin-left: 30px;
+        padding: 20px 30px;
+
+        img {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  .container:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b6b, #f06595, #845ec2, #2c73d2, #008f7a);
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+
+.section-title {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  .section-title-text {
+    > h3 {
+      font-family: $second-family;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    > h4 {
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize;
+    }
+  }
+
+}
+
+.description-section {
+
+  .container {
+    padding: calc(80px + $header-height) 0 80px 0;
+    display: flex;
+
+    .description-text {
+      margin-right: 30px;
+
+      > h1 {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 67px;
+        line-height: 110%;
+        text-transform: capitalize;
+        color: $text;
+        margin-bottom: 20px;
+      }
+
+      > p {
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+      }
+
+      .see-more-btn {
+        margin-bottom: 30px;
+      }
+
+      > ul {
+        display: inline-flex;
+
+        li {
+          .statistics-number {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 140%;
+            text-transform: capitalize;
+          }
+
+          .statistics-property {
+            font-family: $second-family;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 160%;
+            text-transform: capitalize;
+          }
+        }
+
+        li:first-child, li:nth-child(2) {
+          margin-right: 70px;
+        }
+      }
+    }
+
+    .description-img {
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      background: $background---secondary;
+      height: 510px;
+
+      > img {
+        border-radius: 20px 20px 0 0;
+        width: 510px;
+        height: 401px;
+        margin-bottom: 22px;
+      }
+
+      .nft-link {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin: 0 0 10px 20px;
+      }
+
+      .user-link {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.trending-collection-section {
+
+
+  .container {
+    padding: 80px 0;
+
+    > h3 {
+      font-family: $second-family;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    > p {
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize;
+      margin-bottom: 60px;
+    }
+
+    .trending-collection-nft {
+      display: flex;
+      justify-content: space-between;
+
+      .trending-collection-topic {
+        max-width: 330px;
+
+        .trending-collection-images {
+          display: flex;
+          column-gap: 15px;
+          flex-wrap: wrap;
+
+          > a img {
+            margin-bottom: 15px;
+            border-radius: 20px;
+          }
+
+          .more-nfts {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 160%;
+            text-transform: capitalize;
+            text-align: center;
+            border-radius: 20px;
+            padding: 32px 15px;
+            width: 100px;
+            height: 100px;
+            background: $call-to-action;
+          }
+        }
+
+        > h4 {
+          font-family: $second-family;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 140%;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.top-creator-section {
+  .container {
+    padding: 80px 0;
+
+    .top-creator-creators {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .user-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        border-radius: 20px;
+        padding: 20px;
+        width: 240px;
+        height: 238px;
+        background: $background---secondary;
+
+        .user-number {
+          left: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          position: absolute;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          background: $background;
+
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: $caption--label-text;
+        }
+
+        > img {
+          border-radius: 50%;
+          margin-bottom: 20px;
+        }
+
+        .username {
+          margin-bottom: 5px;
+          font-family: $second-family;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 140%;
+          text-transform: capitalize;
+          text-align: center;
+        }
+
+        .total-sales {
+          font-family: $second-family;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: right;
+          color: $caption--label-text;
+        }
+
+        .total-sales-number {
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}
+
+.browse-categories-section {
+  .container {
+    padding: 80px 0;
+
+    .browse-categories-title {
+      font-family: $second-family;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin-bottom: 60px;
+    }
+
+    .browse-categories-categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .category {
+        position: relative;
+
+        span {
+          overflow: hidden;
+          display: block;
+          border-radius: 20px 20px 0 0;
+
+
+          .category-background {
+            filter: blur(6px);
+            transition: 0.6s;
+
+          }
+        }
+
+        .category-element {
+          position: absolute;
+          left: calc(50% - 50px);
+          top: calc(50% - 50px - 38px);
+          transition: 0.6s;
+        }
+
+        h4 {
+          border-top: solid $background 3px;
+          margin-top: -3px;
+          border-radius: 0 0 20px 20px;
+          padding: 19px 30px 25px 30px;
+          width: 240px;
+          height: 73px;
+          font-family: $second-family;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 140%;
+          text-transform: capitalize;
+          background-color: $background---secondary;
+          transition: 0.4s;
+        }
+      }
+
+      .category:hover .category-background, .category-element {
+        filter: blur(0px);
+      }
+
+      .category:hover .category-element {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .category:hover h4 {
+        border-top: solid $background---secondary 3px;
+
+      }
+    }
+  }
+}
+
+.discover-nft-section {
+  .container {
+    padding: 80px 0;
+
+    .discover-nft-cards {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .discover-nft-card-info {
+      padding: 0 30px 25px 30px;
+    }
+
+    .discover-nft-card {
+      max-width: 330px;
+      background: $background---secondary;
+      border-radius: 20px;
+
+      .discover-nft-card-img {
+        margin-bottom: 20px;
+      }
+
+      .discover-nft-card-name {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+      }
+
+      .user-link {
+        margin: 5px 0 20px 0;
+      }
+
+      .discover-nft-price {
+        display: flex;
+        justify-content: space-between;
+
+        .discover-nft-price-text {
+          color: $caption--label-text;
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 110%;
+          margin-bottom: 8px;
+
+        }
+
+        .discover-nft-price-value {
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          margin-bottom: 8px;
+
+        }
+
+        .price {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .discover-nft-bid {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+
+        }
+      }
+    }
+  }
+}
+
+.auction-section {
+  height: 640px;
+  position: relative;
+
+  .auction-background-nft {
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 200;
+    padding-top: 360px;
+
+    .title-and-btn {
+
+      .user-link {
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 151px;
+        height: 44px;
+        background: $background---secondary;
+        margin-bottom: 30px;
+      }
+
+      > h3 {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 51px;
+        line-height: 110%;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+      }
+
+      .see-more-btn {
+        background: $text;
+
+        > span {
+          margin-top: -2px;
+          font-family: $second-family;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: center;
+          color: $background;
+        }
+      }
+    }
+
+    .auction-timer {
+      border-radius: 20px;
+      padding: 30px;
+      width: 295px;
+      height: 147px;
+      align-self: end;
+      backdrop-filter: blur(10px);
+      background: rgba(59, 59, 59, 0.5);
+
+      .timer-title {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 110%;
+        margin-bottom: 10px;
+      }
+
+      .timer {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .timer-numbers {
+          width: 53px;
+
+          span:first-child {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 120%;
+            text-transform: capitalize;
+          }
+
+        }
+
+        .colon {
+          font-family: $font-family;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 140%;
+          text-transform: capitalize;
+          color: var(--text);
+        }
+      }
+    }
+  }
+}
+
+.how-it-works-section {
+  .container {
+    padding: 80px 0;
+
+    > h3 {
+      font-family: $second-family;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    > h4 {
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize;
+      margin-bottom: 50px;
+    }
+
+    .how-it-works-tutorials {
+      display: flex;
+      justify-content: space-between;
+
+
+      .tutorial {
+        background: $background---secondary;
+        border-radius: 20px;
+        padding: 10px 40px;
+        width: 330px;
+        height: 439px;
+
+        > h4 {
+          font-family: $second-family;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 140%;
+          text-transform: capitalize;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        > p {
+          font-family: $second-family;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}
+
+footer {
+  .container {
+    padding: 0 115px;
+  }
+}
