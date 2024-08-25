@@ -577,8 +577,82 @@ header .container:after {
   text-align: center;
 }
 
+.join-digest-section {
+  padding: 40px 0 80px 0;
+}
+.join-digest-section .container {
+  border-radius: 20px;
+  padding: 60px;
+  width: 1050px;
+  height: 430px;
+  background: #3b3b3b;
+  display: flex;
+}
+.join-digest-section .container > img {
+  margin-right: 80px;
+}
+.join-digest-section .container .join-digest-text > h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.join-digest-section .container .join-digest-text > p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.join-digest-section .container .join-digest-text > form {
+  display: flex;
+}
+.join-digest-section .container .join-digest-text > form > input {
+  border-radius: 20px;
+  color: #2b2b2b;
+  padding: 20px 170px 20px 20px;
+  box-shadow: none;
+  border: none;
+}
+.join-digest-section .container .join-digest-text > form > input::placeholder {
+  width: 250px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2b2b2b;
+}
+.join-digest-section .container .join-digest-text > form > input:focus,
+.join-digest-section .container .join-digest-text > form button:focus {
+  outline: none;
+  border: none;
+}
+.join-digest-section .container .join-digest-text > form > span {
+  margin-left: -140px;
+  border-radius: 20px;
+  height: 60px;
+  background: #a259ff;
+  display: flex;
+  padding: 20px 50px 20px 50px;
+}
+.join-digest-section .container .join-digest-text > form > span > input {
+  text-align: left;
+  border-radius: 20px;
+  padding-left: 12px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  background: #a259ff;
+}
+
+footer {
+  background-color: #3b3b3b;
+}
 footer .container {
-  padding: 0 115px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
