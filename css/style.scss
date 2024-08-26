@@ -78,6 +78,53 @@ main {
   }
 }
 
+.notification-email-form {
+  display: flex;
+
+  > input {
+    border-radius: 20px;
+    color: $background;
+    padding: 20px calc(150px + 20px) 20px 20px;
+    box-shadow: none;
+    border: none;
+
+  }
+
+  > input::placeholder {
+    width: 250px;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $background;
+  }
+
+  > input:focus,
+  button:focus {
+    outline: none;
+    border: none;
+  }
+
+  > span {
+    margin-left: -140px;
+    border-radius: 20px;
+    height: 60px;
+    background: $call-to-action;
+    display: flex;
+    padding: 20px 50px 20px 50px;
+
+    > input {
+      text-align: left;
+      border-radius: 20px;
+      padding-left: 12px;
+      border: none;
+      height: 100%;
+      width: 100%;
+      background: $call-to-action;
+    }
+  }
+}
+
 header {
 
   .container {
@@ -742,53 +789,6 @@ header {
         text-transform: capitalize;
         margin-bottom: 40px;
       }
-
-      > form {
-        display: flex;
-
-        > input {
-          border-radius: 20px;
-          color: $background;
-          padding: 20px calc(150px + 20px) 20px 20px;
-          box-shadow: none;
-          border: none;
-
-        }
-
-        > input::placeholder {
-          width: 250px;
-          font-family: $second-family;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 140%;
-          color: $background;
-        }
-
-        > input:focus,
-        button:focus {
-          outline: none;
-          border: none;
-        }
-
-        > span {
-          margin-left: -140px;
-          border-radius: 20px;
-          height: 60px;
-          background: $call-to-action;
-          display: flex;
-          padding: 20px 50px 20px 50px;
-
-          > input {
-            text-align: left;
-            border-radius: 20px;
-            padding-left: 12px;
-            border: none;
-            height: 100%;
-            width: 100%;
-            background: $call-to-action;
-          }
-        }
-      }
     }
   }
 }
@@ -798,6 +798,101 @@ footer {
   background-color: $background---secondary;
 
   .container {
-    width: 100%;
+    padding-top: 40px;
+
+    .footer-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .footer-info-general {
+        max-width: 327px;
+
+        > a img {
+          margin-bottom: 30px;
+        }
+
+        > p {
+          margin-bottom: 20px;
+          font-family: $second-family;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #ccc;
+        }
+
+        > ul {
+          display: flex;
+          max-width: 158px;
+          justify-content: space-between;
+        }
+      }
+
+      .footer-info-explore {
+        > h3 {
+          font-family: $font-family;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 160%;
+          text-transform: capitalize;
+          margin-bottom: 25px;
+        }
+
+        > ul li {
+          margin-bottom: 20px;
+
+          a {
+            font-family: $second-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #ccc;
+          }
+        }
+      }
+
+      .footer-info-join-digest {
+        max-width: 420px;
+
+        > h3 {
+          font-family: $font-family;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 160%;
+          text-transform: capitalize;
+          margin-bottom: 25px;
+        }
+
+        > p {
+          font-family: $second-family;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #ccc;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .footer-info:after {
+      content: '';
+      margin-top: 30px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      bottom: 0;
+      height: 2px;
+      background: $caption--label-text;
+      border-radius: 0 0 5px 5px;
+    }
+
+    >p:last-child {
+      margin: 20px 0 40px;
+      font-family: $second-family;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 110%;
+      color: #ccc;
+    }
   }
 }
